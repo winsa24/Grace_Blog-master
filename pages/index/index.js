@@ -20,27 +20,27 @@ Page({
   onLoad: function (options) {
     var that = this
     this.getArticleList(this.data.pageSize, this.data.pagination);
-    if (wx.createInterstitialAd) {
+   // if (wx.createInterstitialAd) {
       // 在页面中定义插屏广告
-      let interstitialAd = null
+      // let interstitialAd = null
 
-      // 在页面onLoad回调事件中创建插屏广告实例
-      if (wx.createInterstitialAd) {
-        interstitialAd = wx.createInterstitialAd({
-          adUnitId: 'adunit-87d173f19864060b'
-        })
-        interstitialAd.onLoad(() => { })
-        interstitialAd.onError((err) => { })
-        interstitialAd.onClose(() => { })
-      }
+      // // 在页面onLoad回调事件中创建插屏广告实例
+      // if (wx.createInterstitialAd) {
+      //   interstitialAd = wx.createInterstitialAd({
+      //     adUnitId: 'adunit-87d173f19864060b'
+      //   })
+      //   interstitialAd.onLoad(() => { })
+      //   interstitialAd.onError((err) => { })
+      //   interstitialAd.onClose(() => { })
+      // }
 
-      // 在适合的场景显示插屏广告
-      if (interstitialAd) {
-        interstitialAd.show().catch((err) => {
-          console.error(err)
-        })
-      }
-    }
+      // // 在适合的场景显示插屏广告
+      // if (interstitialAd) {
+      //   interstitialAd.show().catch((err) => {
+      //     console.error(err)
+      //   })
+      //}
+   // }
   },
   getArticleList(pageSize, pagination) {
     wx.u.getArticleList(pageSize, pagination, '').then(res => {

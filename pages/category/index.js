@@ -30,18 +30,7 @@ Page({
     })
 
   },
-  adLoad() {
-    wx.hideLoading();
-    console.log('Banner 广告加载成功')
-  },
-  adError(err) {
-    wx.hideLoading();
-    console.log('Banner 广告加载失败', err)
-  },
-  adClose() {
-    wx.hideLoading();
-    console.log('Banner 广告关闭')
-  },
+  
   getArticleList(category) {
     wx.u.getArticleByCategory(category).then(res => {
       console.log(res)
