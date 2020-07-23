@@ -1,0 +1,15 @@
+<!--pages/bottom_menu/bottom_menu.wxml-->
+<view class='bottomrow1'>
+  <view class='bottomtab1' bindtap="first_select">
+    <image class='bottomImg1' src='/images/home.png'></image>
+    <text class='bottomtabText1' style='color:{{co1}}'>附近的店</text>
+  </view>
+  <view class='bottomtab1' bindtap="second_select">
+    <image class='bottomImg1' src='/images/category.png'></image>
+    <text class='bottomtabText1' style='color:{{co2}}'>书圈</text>
+  </view>
+  <view class='bottomtab1' bindtap="third_select">
+    <image class='bottomImg1' src='/images/my.png'></image>
+    <text class='bottomtabText1' style='color:{{co3}}'>我的</text>
+  </view>
+</view>

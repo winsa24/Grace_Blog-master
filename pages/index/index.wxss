@@ -1,4 +1,7 @@
 /**index.wxss**/
+@import "/pages/bottom_menu_base/bottom_menu_base";
+@import "/pages/bottom_menu/bottom_menu";
+
 .container{
   margin-top: 20px;
 }

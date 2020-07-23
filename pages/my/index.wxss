@@ -1,4 +1,5 @@
 /* pages/my/index.wxss */
+@import "/pages/bottom_menu_base/bottom_menu_base";
 
 page {
   background: #eee;

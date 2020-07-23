@@ -102,3 +102,5 @@
       <ad unit-id="adunit-5d73e5f4df2518c1" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
     </view>
 </view>
+
+<include src="/pages/bottom_menu_base/bottom_menu_base" />

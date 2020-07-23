@@ -1,4 +1,6 @@
 <!--pages/square/square.wxml-->
+<include src="/pages/bottom_menu/bottom_menu" />
+
 <scroll-view class='scbg' scroll-y='true'>
 <block wx:for="{{list}}" wx:for-item="itemName" wx:for-index="id">
   <view class='box'>
@@ -24,4 +26,5 @@
 </block>
 </scroll-view>
 
+<include src="/pages/bottom_menu_base/bottom_menu_base" />
 <include src="/pages/bottom_menu/bottom_menu" />

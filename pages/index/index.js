@@ -4,6 +4,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    firco: "#000000",
+    secco: "#979797",
+    co1:"#979797",
+    co3:"#979797",
+    co2:"#000000",
     loading: true,
     current: '',
     current_scroll: '',
@@ -15,6 +20,42 @@ Page({
     bottomWord:'',
     loadMore:false,
     loadMores:false
+  },
+
+  first_select: function() {
+    wx.redirectTo({
+      url: '../near/index'
+    })
+  },
+
+  // second_select: function() {
+  //   wx.redirectTo({
+  //     url: '../index/index'
+  //   })
+  // },
+
+  third_select: function() {
+    wx.redirectTo({
+      url: '../my/index'
+    })
+  },
+
+  // first_select1: function() {
+  //   wx.redirectTo({
+  //     url: '../near/index'
+  //   })
+  // },
+
+  second_select1: function() {
+    wx.navigateTo({
+      url: '../commit/commit'
+    })
+  },
+
+  third_select1: function() {
+    wx.redirectTo({
+      url: '../square/square'
+    })
   },
 
   onLoad: function (options) {

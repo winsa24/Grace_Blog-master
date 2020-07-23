@@ -2,3 +2,5 @@
 <view class="map"> 
    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="13" show-location></map>
 </view>
+
+<include src="/pages/bottom_menu_base/bottom_menu_base" />

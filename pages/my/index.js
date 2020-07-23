@@ -5,12 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
+    co1:"#979797",
+    co2:"#979797",
+    co3:"#000000",
     userData:{},
     signNum:0,
     sign:false,
     signTime:'',
     loading:true,
     noReadNewsCount:0
+  },
+
+  first_select: function() {
+    wx.redirectTo({
+      url: '../near/index'
+    })
+  },
+
+  second_select: function() {
+    wx.redirectTo({
+      url: '../index/index'
+    })
+  },
+
+  third_select: function() {
+    wx.redirectTo({
+      url: '../my/index'
+    })
   },
   
   onLoad: function (options) {

@@ -2,4 +2,19 @@
 <view class='textarea'>
    <textarea placeholder="发条动态吧~" placeholder-style="color:#888888; font-size:38rpx;" class='textinput' maxlength='-1' bindinput ="bindTextAreaBlur"></textarea>
 </view>
+<button
+    type="default" size="mini" bindtap="chooseImage" 
+    wx:if="{{images.length < 3}}"
+>添加图片</button>
+<view class="question-images">
+  <block wx:for="{{images}}" wx:key="*this">
+    <view class="q-image-wrap">
+      <!-- 图片缩略图  -->
+      <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+      <!-- 移除图片的按钮  -->
+      <view class="q-image-remover" data-idx="{{index}}" bindtap="removeImage">删除</view>
+    </view>
+  </block>
+</view>
+
 <view id='btn' class='click' bindtap='send'>发送</view>

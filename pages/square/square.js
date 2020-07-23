@@ -1,12 +1,17 @@
 // pages/square/square.js
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    firco: "#000000",
-    secco: "#979797",
+    secco: "#000000",
+    firco: "#979797",
+    co1:"#979797",
+    co3:"#979797",
+    co2:"#000000",
     list: [{
         face_url: "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=447979932,3108003765&fm=26&gp=0.jpg",
         username: "哆啦B梦",
@@ -39,22 +44,40 @@ Page({
   },
 
   first_select: function() {
-    // wx.redirectTo({
-    //   url: '../square/square'
-    // })
+    wx.redirectTo({
+      url: '../near/index'
+    })
   },
 
-  second_select: function() {
+  // second_select: function() {
+  //   wx.redirectTo({
+  //     url: '../index/index'
+  //   })
+  // },
+
+  third_select: function() {
+    wx.redirectTo({
+      url: '../my/index'
+    })
+  },
+
+  first_select1: function() {
+    wx.redirectTo({
+      url: '../index/index'
+    })
+  },
+
+  second_select1: function() {
     wx.navigateTo({
       url: '../commit/commit'
     })
   },
 
-  third_select: function() {
-    wx.switchTab({
-      url: '/pages/my/index'
-    })
-  },
+  // third_select1: function() {
+  //   wx.redirectTo({
+  //     url: '../square/square'
+  //   })
+  // },
 
   bindTextAreaBlur: function(e){
     console.log(e.detail.value);
